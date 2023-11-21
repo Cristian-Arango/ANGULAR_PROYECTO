@@ -7,30 +7,32 @@ import { Router } from '@angular/router';
   styleUrls: ['./registrar.component.css']
 })
 export class RegistrarComponent {
-  constructor(
-    public router:Router
-    ){
-  
-    }
-  
-    // Variables para almacenar los datos del formulario
-    email: string = '';
-    username: string = '';
-    password: string = '';
-  
-    local() {
-      // Guardar los datos en el localStorage
-      const userData = {
-        email: this.email,
-        username: this.username,
-        password: this.password
-      };
-      localStorage.setItem('userData', JSON.stringify(userData));
-    }
-  
-  clicK(){
-    console.log("helou");
-    this.router.navigateByUrl("/")
-   }  
-}
+  constructor(public router: Router) {}
 
+  usuariosRegistrados: any[] = [];
+  users: any = {
+    email: '',
+    username: '',
+    password: ''
+  };
+
+  guardarDatosLocalStorage() {
+    // Agregar el nuevo usuario a la lista de usuarios registrados
+    this.usuariosRegistrados.push(this.users);
+
+    // Guardar la lista actualizada en el local storage
+    localStorage.setItem('users', JSON.stringify(this.usuariosRegistrados));
+
+    // Limpiar los campos después de guardar los datos
+    this.users = {
+      email: '',
+      username: '',
+      password: ''
+    };
+  }
+
+  click() {
+    console.log("¡Hola!");
+    this.router.navigateByUrl("/");
+  }
+}
