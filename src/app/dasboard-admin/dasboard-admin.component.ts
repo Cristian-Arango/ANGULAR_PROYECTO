@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dasboard-admin',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class DasboardAdminComponent {
 
+  
+  constructor(private router:Router){
+
+  }
+
+  clic(){
+    console.log("helou");
+    this.router.navigateByUrl("/")
+  }
 }
