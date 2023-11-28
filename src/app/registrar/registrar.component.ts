@@ -13,6 +13,9 @@ export class RegistrarComponent {
 
   usuariosRegistrados: any[] = [];
   users: any = {
+    name:'',
+    lastname:'',
+    identificacion:'',
     email: '',
     username: '',
     password: ''
@@ -20,7 +23,7 @@ export class RegistrarComponent {
 
   guardarDatosLocalStorage() {
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-    if(this.users.email=='' || this.users.username=='' || this.users.password==''){
+    if(this.users.name=='' ||this.users.lastname=='' ||this.users.identificacion=='' ||this.users.email=='' || this.users.username=='' || this.users.password==''){
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -45,6 +48,9 @@ export class RegistrarComponent {
     
         // Limpiar los campos después de guardar los datos
         this.users = {
+          name: '',
+          lastname: '', 
+          identificacion: '',
           email: '',
           username: '', 
           password: ''

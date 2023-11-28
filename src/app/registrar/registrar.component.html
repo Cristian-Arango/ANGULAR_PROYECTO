@@ -3,6 +3,18 @@
     <div class="container">
       <div class="card">
         <a class="singup">Sign Up</a>
+        <div class="inputBox">
+          <input type="text" required [(ngModel)]="users.name" name="name" id="name">
+          <span>Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" required [(ngModel)]="users.lastname" name="lastname" id="lastname">
+          <span>Last Name</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" required [(ngModel)]="users.identificacion" name="identificacion" id="identificacion">
+          <span>Identificación</span>
+        </div>
         <div class="inputBox1">
           <input type="email" required [(ngModel)]="users.email" name="email" id="email">
           <span class="user">Email</span>
