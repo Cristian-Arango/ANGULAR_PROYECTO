@@ -2,7 +2,7 @@
     float: left;
     width:235px ;
     height: 100vh; /* 100% de la altura de la ventana (viewport height) */
-    background-color: rgb(115, 201, 115);
+    background-color: rgb(160, 160, 160);
 }
 .menu{
     padding-left: 20px;
@@ -15,6 +15,7 @@ h1{
     
 
 }
+
 .card {
     margin-right: 500px;
     width: calc(25.33% - 20px); /* Ancho de cada tarjeta, restando el espacio entre ellas */
@@ -25,6 +26,9 @@ h1{
   }
   
   .card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(236, 236, 236);
     width: 100%;
     height: 130px;
@@ -78,3 +82,73 @@ h1{
     flex-wrap: wrap; /* Envuelve las tarjetas */
 
   }
+  .container-input {
+    position: relative;
+     margin-left: 300px;
+  }
+  
+  .input {
+    width: 400px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 500px;
+  }
+
+
+  button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    margin-left: 1000px;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+  button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+  button:hover span {
+    transform: translateX(7px);
+  }
+  
+
+
+
+
+
+
+
+  

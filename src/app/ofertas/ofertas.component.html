@@ -1,0 +1,19 @@
+<body>
+  <DIV class="body">
+    <div class="div">
+      <h4 class="menu">PERFIL</h4>
+      <h4 class="menu" (click)="volverdasboard()">VOLVER</h4>
+  </div>
+<h1>Ofertas Laborales</h1>
+<div class="containercards">
+<div class="card" *ngFor="let oferta of ofertas">
+  <img [src]="oferta.Logo" alt="Logo de la oferta" class="logo" width="90px">
+  <div class="card__content">
+      <p class="card__title"> N° vacantes: {{ oferta.name }}</p>
+      <p class="card__title">{{ oferta.Vacantes }}</p>
+
+      <p class="card__description">{{ oferta.descripcion }}</p>
+    </div>
+</div>
+
+</div></DIV></body>

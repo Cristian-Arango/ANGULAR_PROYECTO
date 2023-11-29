@@ -15,6 +15,7 @@ h1{
     
 
 }
+
 .card {
     margin-right: 500px;
     width: calc(25.33% - 20px); /* Ancho de cada tarjeta, restando el espacio entre ellas */

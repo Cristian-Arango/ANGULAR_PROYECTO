@@ -12,9 +12,19 @@ export class DashboardComponent {
 
   }
 
+  llamardatos(){
+    const usuariollogged=localStorage.getItem('usuactual');
+    console.log(usuariollogged);
+    
+  }
+
   clic(){
     console.log("helou");
     this.router.navigateByUrl("/")
   }
+  ofertas(){
+    this.router.navigateByUrl("/ofertas")
+  }
+
 }
 

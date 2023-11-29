@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DasboardAdminComponent } from './dasboard-admin/dasboard-admin.component';
+import { OfertasComponent } from './ofertas/ofertas.component';
+import { OfertasadminComponent } from './ofertasadmin/ofertasadmin.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DasboardAdminComponent } from './dasboard-admin/dasboard-admin.componen
     LoginComponent,
     RegistrarComponent,
     DashboardComponent,
-    DasboardAdminComponent
+    DasboardAdminComponent,
+    OfertasComponent,
+    OfertasadminComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,53 +1,68 @@
 <div class="div">
-    <h3 class="menu">Consultar Multas</h3>
-    <h3 class="menu">Reglamento de transito</h3>
-    <h3 class="menu">Pico y placa</h3>
-    <h3 class="menu">Saca tu pase</h3>
+    <h4 class="menu">VER OFERTAS LABORALES</h4>
+    <h4 class="menu">PERFIL</h4>
+    <h4 class="menu" (click)="ofertas()" >OFERTAS LABORALES</h4>
 </div>
 
-<h1 class="h1">Bienvenido a  Transito</h1>
-<button (click)="clic()">Cerrar Secion</button>
+<h1 class="h1">Bienvenido a  AquiTrabajo</h1>
+<div class="container-input">
+    <input type="text" placeholder="Search" name="text" class="input">
+    <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+      <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+  </svg>
+  </div>
+  <h4 >Las empresas mas populares</h4>
+
 <div class="contenedor">
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    <div class="card">
+        <div class="card-image">
+            <img src="/assets/img/tp.png" alt=""  style="width: 250px; height: 130px;">
+
+        </div>
+        <div class="category"> Teleperformance </div>
+        <div class="heading"> 400 Vacantes
+        </div>
     </div>
-</div>
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    <div class="card">
+        <div class="card-image">
+            <img src="/assets/img/bancolombia.png" alt=""  style="width: 250px; height: 130px;">
+
+        </div>
+        <div class="category"> Bancolombia </div>
+        <div class="heading"> 15 Vacantes
+        </div>
     </div>
-</div>
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    <div class="card">
+        <div class="card-image">
+            <img src="/assets/img/davi.png" alt=""  style="width: 250px; height: 130px;">
+
+        </div>
+        <div class="category"> Davivienda </div>
+        <div class="heading"> 890 Vacantes
+        </div>
     </div>
-</div>
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    <div class="card">
+        <div class="card-image">
+        <img class="img" src="/assets/img/tecno.png" alt="" style="width: 250px; height: 130px;"></div>
+        <div class="category"> Tecno </div>
+        <div class="heading"> 2 Vacantes
+        </div>
     </div>
-</div>
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    <div class="card">
+        <div class="card-image">
+        <img src="/assets/img/mciro.png" alt="" style="width: 250px; height: 130px;">
+        </div>
+        <div class="category"> Microsoft </div>
+        <div class="heading"> 129 Vacantes</div>
     </div>
+  
 </div>
-<div class="card">
-    <div class="card-image"></div>
-    <div class="category"> Illustration </div>
-    <div class="heading"> A heading that must span over two lines
-        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
-    </div>
-</div>
-</div>
+
+<button (click)="llamardatos()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path>
+    </svg>
+    <span>Ver más</span>
+  </button>
+  

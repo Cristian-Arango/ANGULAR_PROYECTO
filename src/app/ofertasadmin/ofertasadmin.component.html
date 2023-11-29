@@ -1,0 +1,28 @@
+    <p>ofertas admin</p>
+    <div class="container">
+        <div class="card">
+            <a class="singup">Registra Oferta </a>
+            <div class="inputBox">
+                <input type="text" required [(ngModel)]="oferts.name" name="name">
+                <span class="user">Nombre empresa</span>
+              </div>
+          
+              <div class="inputBox">
+                <input type="text" required [(ngModel)]="oferts.Vacantes"name="Vacantes">
+                <span>Vacantes</span>
+              </div>
+          
+              <div class="inputBox">
+                <input type="text" required [(ngModel)]="oferts.descripcion" name="descripcion">
+                <span>Descripcion</span>
+              </div>
+          
+              <div class="inputBox">
+                <input type="file" (change)="onFileSelected($event)" accept="image/*" name="image">
+                <span>Logo</span>
+              </div>
+
+            <button class="enter" type="submit" (click)="guardarDatosLocalStorage()">Enter</button>
+
+        </div>
+    </div>
